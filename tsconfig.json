@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "build",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "declaration": false,
+    "noImplicitAny": false,
+    "removeComments": false,
+    "noLib": false,
+    "preserveConstEnums": false,
+    "sourceMap": false,
+    "types": [
+      "node",
+      "mocha"
+    ]
+  },
+  "atom": {
+    "rewriteTsconfig": true
+  },
+  "include": [
+    "**.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "filesGlob": [
+    "**/*.ts",
+    "**/*.tsx",
+    "!node_modules/**"
+  ],
+  "files": [
+    "config/constants.ts",
+    "config/database.ts",
+    "config/interface.ts",
+    "config/server.ts",
+    "helpers/validation.ts",
+    "index.ts",
+    "models/LogEmail.ts",
+    "models/index.ts",
+    "module/index.ts",
+    "module/email/controller/email.ts",
+    "module/email/route/email.ts",
+    "module/email/test/email.test.ts",
+    "utils/privilege.ts",
+    "utils/token.ts"
+  ]
+}
